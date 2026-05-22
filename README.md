@@ -17,7 +17,17 @@ Zalecane jest użycie wirtualnego środowiska Python (venv/conda). Przykładowe 
 python -m venv .venv
 source .venv/Scripts/activate   # Windows: .venv\Scripts\activate
 pip install --upgrade pip
-pip install jupyterlab pandas numpy scikit-learn matplotlib seaborn liac-arff
+Można użyć pliku `requirements.txt` z listą zależności (załączony w repozytorium). Aby zainstalować pakiety z pliku:
+
+```bash
+pip install -r requirements.txt
+```
+
+Aby wygenerować `requirements.txt` z aktualnego (aktywnego) środowiska:
+
+```bash
+pip freeze > requirements.txt
+```
 ```
 
 ## Uruchomienie
